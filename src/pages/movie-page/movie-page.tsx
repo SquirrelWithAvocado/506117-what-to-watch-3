@@ -125,5 +125,6 @@ function MoviePage({ film, similar }: MoviePageProps) {
     </>
   );
 }
+// tabs done
 
 export default MoviePage;
