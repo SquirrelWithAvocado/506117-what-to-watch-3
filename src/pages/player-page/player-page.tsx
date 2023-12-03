@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 type PlayerProps = {
   film: {
     id: string;
@@ -28,7 +30,7 @@ export default function PlayerPage({ film }: PlayerProps): JSX.Element {
     <div className="player">
       <video src={film.videoLink} className="player__video" poster="img/player-poster.jpg"></video>
 
-      <button type="button" className="player__exit">Exit</button>
+      <Link to="/" className="player__exit">Exit</Link>
 
       <div className="player__controls">
         <div className="player__controls-row">
